@@ -55,3 +55,9 @@ Our implementation of the Observer pattern adheres to the following key principl
 - **Registration and Deregistration**: Observers can dynamically register and deregister themselves with the subject based on their relevance to the current state of the system.
 
 - **Event Handling**: The subject efficiently manages the propagation of events to all registered observers, ensuring that each observer receives relevant notifications in a timely manner.
+
+## Tests
+
+My testing suite rigorously evaluates the functionality of the service and repositories within our music streaming platform. These tests ensure that the service methods correctly interact with the underlying data repositories, verifying that data is stored, retrieved, and modified as intended. By systematically testing these components, we validate the core functionality of our platform and identify any discrepancies or errors in the data management processes. Regular execution of these tests guarantees the reliability and accuracy of our platform's data handling capabilities.
+
+
