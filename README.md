@@ -1,63 +1,124 @@
-[Music Recommendation Platform.md](https://github.com/tudorcuc/PS-Assigment/files/14675841/Music.Recommendation.Platform.md)
+# Sonar - Music Recommendation Platform
 
-# Music Streaming Platform
-## 
+## Overview
 
-This project aims to develop a platform that recommends new music to users based on their preferences. It utilizes a database to store user profiles, listening history, and music data.
+Sonar is a full-stack music recommendation platform designed to enhance user experience by providing personalized music recommendations, playlist management, and profile handling. The platform uses Spring Boot for the backend and a modern front-end framework to deliver a seamless user experience.
 
 ## Features
 
-- Personalized music recommendations based on user preferences and listening history.
-- User registration and profile management.
-- Database management for storing user profiles, listening history, and music data.
-- Search functionality to discover new music based on various criteria.
+- **User Profiles**: Create and manage user profiles.
+- **Playlists**: Create, update, delete, and retrieve playlists.
+- **Music Recommendations**: Get personalized music recommendations based on user preferences and listening history.
+- **Cross-Origin Resource Sharing (CORS)**: Enabled for seamless integration with various clients.
 
-## Tech
+## Technologies Used
 
-- Programming Languages: Java
-- Database: MySQL
-- Frontend: Not decided yet
+- **Backend**: Spring Boot, Spring Data JPA
+- **Database**: MySQL
+- **Frontend**: React.js
+- **Other**: Lombok, RESTful API
 
-## Usage
-1. Register as a new user or log in with existing credentials.
-2. Explore the available features such as searching for music, viewing recommendations, and managing your profile.
-3. Add music to your albums to create personalized collections.
-4. Enjoy discovering new music tailored to your tastes!
+## Getting Started
 
-## Observer Pattern Implementation
+### Prerequisites
 
-In this project, we've leveraged the Observer design pattern to efficiently manage notifications and updates within the system. The Observer pattern facilitates a one-to-many dependency relationship between objects, where multiple observers (listeners) are notified automatically of any state changes in the subject (publisher).
+- Java 11 or higher
+- Maven
+- Node.js (for frontend)
 
-### How it Works
+### Setup
 
-- **Subject (Publisher)**: In our implementation, the subject represents the component responsible for tracking changes in the music database or user preferences. Whenever there's a relevant change, the subject notifies all registered observers.
-  
-- **Observers (Listeners)**: Observers are entities interested in receiving notifications about changes in the system. In our case, these could include components responsible for generating personalized music recommendations, updating user profiles, or refreshing the user interface.
+1. **Backend Setup:**
+    ```sh
+    cd backend
+    mvn install
+    mvn spring-boot:run
+    ```
 
-### Benefits
+2. **Frontend Setup:**
+    ```sh
+    cd frontend
+    npm install
+    npm start
+    ```
 
-Utilizing the Observer pattern offers several advantages:
+3. **Access the application:**
+    - Backend API: `http://localhost:8080`
+    - Frontend: `http://localhost:3000`
 
-- **Loose Coupling**: By decoupling the subject from its observers, we ensure that changes in one component don't directly impact others. This promotes modularity and flexibility within our system.
+## API Endpoints
 
-- **Scalability**: Adding new observers or modifying existing ones becomes simpler as they're independent of each other and the subject.
+### Profile Management
 
-- **Real-time Updates**: With the Observer pattern, our system can provide real-time updates to users, ensuring that they receive timely recommendations and notifications.
+- **Create Profile**
+    ```http
+    POST /api/profiles
+    ```
 
-### Example Scenario
+- **Get Profile by ID**
+    ```http
+    GET /api/profiles/{id}
+    ```
 
-Consider a scenario where a user adds a new music genre to their preferences. With the Observer pattern, the system's recommendation engine, profile manager, and UI components can be notified of this change simultaneously. The recommendation engine can update its algorithms accordingly, the profile manager can adjust the user's profile, and the UI can reflect the changes instantly.
+- **Get All Profiles**
+    ```http
+    GET /api/profiles
+    ```
 
-### Implementation Details
+- **Update Profile**
+    ```http
+    PUT /api/profiles/{id}
+    ```
 
-Our implementation of the Observer pattern adheres to the following key principles:
+- **Delete Profile**
+    ```http
+    DELETE /api/profiles/{id}
+    ```
 
-- **Registration and Deregistration**: Observers can dynamically register and deregister themselves with the subject based on their relevance to the current state of the system.
+### Playlist Management
 
-- **Event Handling**: The subject efficiently manages the propagation of events to all registered observers, ensuring that each observer receives relevant notifications in a timely manner.
+- **Create Playlist**
+    ```http
+    POST /api/playlists
+    ```
 
-## Tests
+- **Get Playlist by ID**
+    ```http
+    GET /api/playlists/{id}
+    ```
 
-My testing suite rigorously evaluates the functionality of the service and repositories within our music streaming platform. These tests ensure that the service methods correctly interact with the underlying data repositories, verifying that data is stored, retrieved, and modified as intended. By systematically testing these components, we validate the core functionality of our platform and identify any discrepancies or errors in the data management processes. Regular execution of these tests guarantees the reliability and accuracy of our platform's data handling capabilities.
+- **Get Playlists by Profile ID**
+    ```http
+    GET /api/playlists/profile/{profileId}
+    ```
+
+- **Update Playlist**
+    ```http
+    PUT /api/playlists/{id}
+    ```
+
+- **Delete Playlist**
+    ```http
+    DELETE /api/playlists/{id}
+    ```
+
+## Code Structure
+
+### Backend
+
+- **Controller**: Handles HTTP requests and responses.
+- **Service**: Contains business logic.
+- **Repository**: Manages database interactions.
+
+### Frontend
+
+- **Components**: UI components.
+- **Services**: Handles API calls.
+- **State Management**: Manages global state.
 
 
+## Acknowledgements
+
+- Spring Boot Documentation
+- React/Vue.js/Angular Documentation
+- Lombok Documentation
