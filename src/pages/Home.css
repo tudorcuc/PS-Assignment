@@ -1,0 +1,169 @@
+.home {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    font-family: 'Cinzel', serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem; 
+  }
+  
+  .hero {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    margin-bottom: 2rem;
+  }
+  
+  .join-btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .join-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .popular-songs {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .song-item {
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+  }
+  
+  .song-info {
+    margin-top: 1rem;
+  }
+  
+  .song-title {
+    font-size: 2.0rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .song-artist {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .song-streams {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Background styles */
+  .background-1 {
+    background: linear-gradient(135deg, #f06, #ffba00);
+  }
+  
+  .background-2 {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  
+  .background-3 {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+  }
+  
+  .background-4 {
+    background: linear-gradient(135deg, #1e90ff, #ff6347);
+  }
+  
+  .background-5 {
+    background: linear-gradient(135deg, #ff69b4, #ff4500);
+  }
+  
+  .background-6 {
+    background: linear-gradient(135deg, #00ced1, #8a2be2);
+  }
+  
+  .background-7 {
+    background: linear-gradient(135deg, #32cd32, #ff4500);
+  }
+
+.play-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem;
+    outline: none; 
+  }
+  
+  .play-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff; 
+    border-radius: 5%; 
+  }
+  
+  .play-button::before {
+    content: '\25B6'; 
+    font-size: 1.5rem;
+    margin-right: 0.5rem; 
+  }
+
+  .recommendation-section {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .genre-select {
+    margin-bottom: 1rem;
+  }
+  
+  .genre-select label {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .genre-select select {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .recommend-button {
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .recommend-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .recommended-song {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  

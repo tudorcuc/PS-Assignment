@@ -1,0 +1,111 @@
+/* Scoped styles for playlists container */
+.playlists-container {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-family: 'Cinzel', serif;
+}
+
+.playlists-container .playlists-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.playlists-container .playlist-header {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.playlists-container .playlist-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.playlists-container .playlist-form input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Cinzel', serif;
+}
+
+.playlists-container .song-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.playlists-container .song-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.playlists-container .song-item span {
+  font-family: 'Cinzel', serif;
+}
+
+.playlists-container .song-item input {
+  margin-right: 1rem;
+}
+
+.playlists-container .playlist-form button {
+  padding: 0.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Cinzel', serif;
+}
+
+.playlists-container .playlist-form button:hover {
+  background-color: white;
+  color: black;
+}
+
+.playlists-container .playlist-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+.playlists-container .playlist-item {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.playlists-container .error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
