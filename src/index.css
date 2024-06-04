@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-image: url('C:\Users\Tudor\Downloads\bcg.jpg'); /* Set your background image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.app {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cinzel', serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 99%; 
+  z-index: 1000; 
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .logo-img {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
